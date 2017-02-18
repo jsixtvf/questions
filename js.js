@@ -70,8 +70,21 @@ function gestionarXml(dadesXml){
  var tituloInput=xmlDoc.getElementsByTagName("title")[0].innerHTML;
  ponerDatosInputHtml(tituloInput);
  respescrita=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- 
- function inicializar(){
+
+ //****************************************************************************************************
+//Gestionar la presentación de las respuestas
+function darRespuestaHtml(r){
+ var p = document.createElement("p");
+ var node = document.createTextNode(r);
+ p.appendChild(node);
+ document.getElementById('resultadosDiv').appendChild(p);
+}
+
+function presentarNota(){
+   darRespuestaHtml("Nota: "+nota+" puntos sobre 3");
+}
+
+function inicializar(){
    document.getElementById('resultadosDiv').innerHTML = "";
    nota=0.0;
 }
