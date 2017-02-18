@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE questions>
-<questions>
+<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="questions.xsd">
 	<!-- Edades de la historia -->
+	<question id='jklm_003'>
+		<type>text</type>
+		<title>¿La especie humana y los mamuts compartieron hábitat?</title>
+		<answer>si</answer>
 	<question id='jklm_001'>
 		<type>radio</type>
 		<title>1.- Selecciona el orden cronológico adecuado:</title>
@@ -21,10 +26,7 @@
 		<option>c) Australopithecus</option>
 		<answer>2</answer>
 	</question>
-	<question id='jklm_003'>
-		<type>text</type>
-		<title>¿La especie humana y los mamuts compartieron hábitat?</title>
-		<answer>si</answer>
+	
 	</question>
 	<question id='jklm_004'>
 		<type>checkbox</type>
@@ -71,7 +73,8 @@
 		<option>b) El clero</option>
 		<option>c) La nobleza</option>
 		<option>d) Señores feudales</option>
-		<answer>2,3</answer>
+		<answer>2</answer>
+		<answer>3</answer>
 	</question>
 	<question id='jklm_010'>
 		<type>multiple</type>
@@ -80,7 +83,8 @@
 		<option>b) Las Cruzadas</option>
 		<option>c) Asistiendo a misa</option>
 		<option>d) Canciones de trovadores</option>
-		<answer>0,3</answer>
+		<answer>0</answer>
+		<answer>3</answer>
 	</question>
 	<!--Edad Moderna y Contemporánea (Kevin)-->
 	<question id='jklm_011'>
