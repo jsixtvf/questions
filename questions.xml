@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE questions SYSTEM 'questions.dtd'>
+<!DOCTYPE questions>
 <questions>
 	<!-- Edades de la historia -->
 	<question id='jklm_001'>
