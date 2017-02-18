@@ -7,6 +7,8 @@
 		<type>text</type>
 		<title>¿La especie humana y los mamuts compartieron hábitat?</title>
 		<answer>si</answer>
+	</question>
+	
 	<question id='jklm_001'>
 		<type>radio</type>
 		<title>1.- Selecciona el orden cronológico adecuado:</title>
@@ -26,8 +28,7 @@
 		<option>c) Australopithecus</option>
 		<answer>2</answer>
 	</question>
-	
-	</question>
+		
 	<question id='jklm_004'>
 		<type>checkbox</type>
 		<title>El hombre de Cro-Magnon se extinguió debido principalmente a:</title>
