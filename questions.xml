@@ -20,6 +20,15 @@
 		<answer>3</answer>
 	</question>
 	
+	<question id='jklm_004'>
+		<type>checkbox</type>
+		<title>El hombre de Cro-Magnon se extinguió debido principalmente a:</title>
+		<option>a) Cambios Climáticos</option>
+		<option>b) Guerras y Mestizaje</option>
+		<option>c) Enfermedades</option>
+		<answer>1</answer>
+	</question>
+	
 	<question id='jklm_001'>
 		<type>radio</type>
 		<title>1.- Selecciona el orden cronológico adecuado:</title>
@@ -40,14 +49,7 @@
 		<answer>2</answer>
 	</question>
 		
-	<question id='jklm_004'>
-		<type>checkbox</type>
-		<title>El hombre de Cro-Magnon se extinguió debido principalmente a:</title>
-		<option>a) Cambios Climáticos</option>
-		<option>b) Guerras y Mestizaje</option>
-		<option>c) Enfermedades</option>
-		<answer>1</answer>
-	</question>
+
 	<!--Edad Antigua (Marga)-->
 	
 	<question id='jklm_006'>
