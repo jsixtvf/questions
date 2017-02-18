@@ -12,10 +12,10 @@ window.onload = function(){
  formElement=document.getElementById('myform');
  formElement.onsubmit=function(){
    inicializar();
-   corregirNumber();
+  /* corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   presentarNota();   
+   presentarNota(); */
    return false;
  }
  
