@@ -1,5 +1,5 @@
 var formElement=null;
-var numeroSecreto=null;
+var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
@@ -40,7 +40,7 @@ function gestionarXml(dadesXml){
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloInput=xmlDoc.getElementsByTagName("title")[0].innerHTML;
  ponerDatosInputHtml(tituloInput);
- numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respCorrecta=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
  
  //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
