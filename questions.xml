@@ -3,6 +3,7 @@
 <!DOCTYPE questions>
 <questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="questions.xsd">
 	<!-- Edades de la historia -->
+	
 	<question id='jklm_003'>
 		<type>text</type>
 		<title>¿La especie humana y los mamuts compartieron hábitat?</title>
