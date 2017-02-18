@@ -9,6 +9,16 @@
 		<answer>si</answer>
 	</question>
 	
+	<question id='jklm_005'>
+		<type>select</type>
+		<title>5.- ¿Qué Edad de la Historia tuvo una época que se caracterizaba por el ideal de belleza y perfección?</title>
+		<option>a) Edad Media</option>
+		<option>b) Edad Moderna y Contemporánea</option>
+		<option>c) Prehistoria</option>
+		<option>d) Antigua</option>
+		<answer>3</answer>
+	</question>
+	
 	<question id='jklm_001'>
 		<type>radio</type>
 		<title>1.- Selecciona el orden cronológico adecuado:</title>
@@ -38,15 +48,7 @@
 		<answer>1</answer>
 	</question>
 	<!--Edad Antigua (Marga)-->
-	<question id='jklm_005'>
-		<type>select</type>
-		<title>5.- ¿Qué Edad de la Historia tuvo una época que se caracterizaba por el ideal de belleza y perfección?</title>
-		<option>a) Edad Media</option>
-		<option>b) Edad Moderna y Contemporánea</option>
-		<option>c) Prehistoria</option>
-		<option>d) Antigua</option>
-		<answer>3</answer>
-	</question>
+	
 	<question id='jklm_006'>
 		<type>radio</type>
 		<title>6.- ¿Cuándo se fundó Roma?</title>
