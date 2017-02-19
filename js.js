@@ -2,6 +2,8 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
+var respuestaRadio =null;
+var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
 //**************************************************************************************************** 
@@ -67,6 +69,20 @@ function gestionarXml(dadesXml){
   respuestasCheckbox[i]=xmlDoc.getElementById("jklm_004").getElementsByTagName("answer")[i].innerHTML;
  }
 }
+
+ // RADIO
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloRadio=xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var opcionesRadio = [];
+ var nopt = xmlDoc.getElementById("jklm_001").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
+    opcionesRadio[i] = xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
+ }
+ ponerDatosRadioHtml(tituloRadio,opcionesRadio);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
+
+
+ // MULTIPLE
 
 //****************************************************************************************************
 //implementación de la corrección
@@ -156,6 +172,18 @@ function ponerDatosCheckboxHtml(t,opt){
     checkboxContainer.appendChild(label);
  }  
 }
+
+function ponerDatosRadioHtml(t,opt){
+  document.getElementById("tituloRadio").innerHTML=t;
+  var select = document.getElementsByTagName("select")[0];
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+
 
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
