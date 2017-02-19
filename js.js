@@ -177,7 +177,7 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
 
-/*function ponerDatosRadioHtml(t,opt){
+function ponerDatosRadioHtml(t,opt){
  var radioContainer=document.getElementById('radioDiv');
   document.getElementById('tituloRadio').innerHTML=t;
   for (i = 0; i < opt.length; i++) { 
@@ -191,7 +191,7 @@ function ponerDatosCheckboxHtml(t,opt){
     radioContainer.appendChild(input);
     radioContainer.appendChild(label);
  }  
-}*/
+}
 
 
 //****************************************************************************************************
