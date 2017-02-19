@@ -184,10 +184,10 @@ function ponerDatosRadioHtml(t,opt){
     var input = document.createElement("input");
     var label = document.createElement("label");
     label.innerHTML=opt[i];
-   label.setAttribute("for", "historia_"+i);
+   label.setAttribute("for", "historia1_"+i);
     input.type="radio";
-    input.name="historia";
-    input.id="historia_"+i;;    
+    input.name="historia1";
+    input.id="historia1_"+i;;    
     radioContainer.appendChild(input);
     radioContainer.appendChild(label);
  }  
