@@ -175,7 +175,7 @@ function ponerDatosCheckboxHtml(t,opt){
 
 function ponerDatosRadioHtml(t,opt){
   document.getElementById("tituloRadio").innerHTML=t;
-  var select = document.getElementsByTagName("select")[0];
+  var select = document.getElementsByTagName("radio")[0];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
