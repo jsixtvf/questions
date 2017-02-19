@@ -72,14 +72,14 @@ function gestionarXml(dadesXml){
 
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloRadio=xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var tituloRadio=xmlDoc.getElementsByTagName("title")[1].innerHTML;
  var opcionesRadio = [];
  var nopt = xmlDoc.getElementById("jklm_001").getElementsByTagName('option').length;
   for (i = 0; i < nopt; i++) { 
     opcionesRadio[i] = xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
 
 
  // MULTIPLE
