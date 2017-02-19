@@ -72,7 +72,7 @@ function gestionarXml(dadesXml){
 
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
-/* var tituloRadio = xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var tituloRadio = xmlDoc.getElementsByTagName("title")[3].innerHTML;
  var opcionesRadio = [];
  var nopt = xmlDoc.getElementById("jklm_001").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
@@ -83,7 +83,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
  }
-}*/
+}
 
 
  // MULTIPLE
@@ -179,7 +179,7 @@ function ponerDatosCheckboxHtml(t,opt){
 
 /*function ponerDatosRadioHtml(t,opt){
  var radioContainer=document.getElementById('radioDiv');
-  document.getElementById("tituloRadio").innerHTML=t;
+  document.getElementById('tituloRadio').innerHTML=t;
   for (i = 0; i < opt.length; i++) { 
     var input = document.createElement("input");
     var label = document.createElement("label");
