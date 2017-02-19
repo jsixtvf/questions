@@ -188,8 +188,8 @@ function ponerDatosRadioHtml(t,opt){
     input.type="radio";
     input.name="historia";
     input.id="historia_"+i;;    
-    checkboxContainer.appendChild(input);
-    checkboxContainer.appendChild(label);
+    radioContainer.appendChild(input);
+    radioContainer.appendChild(label);
  }  
 }
 
