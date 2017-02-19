@@ -2,7 +2,7 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestasRadio = [];
+var respuestaRadio = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -79,9 +79,7 @@ function gestionarXml(dadesXml){
     opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
- for (i = 0; i < nres; i++) { 
-  respuestasRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
  }
 }
 
