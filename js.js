@@ -79,7 +79,7 @@ function gestionarXml(dadesXml){
     opcionesRadio[i] = xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
 
 
  // MULTIPLE
