@@ -72,7 +72,7 @@ function gestionarXml(dadesXml){
 
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloRadio=xmlDoc.getElementsByTagName("title")[1].innerHTML;
+ var tituloRadio=xmlDoc.getElementsByTagName("title")[3].innerHTML;
  var opcionesRadio = [];
  var nopt = xmlDoc.getElementById("jklm_001").getElementsByTagName('option').length;
   for (i = 0; i < nopt; i++) { 
