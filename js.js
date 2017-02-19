@@ -2,7 +2,7 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestaRadio =null;
+var respuestasRadio = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -72,14 +72,18 @@ function gestionarXml(dadesXml){
 
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloRadio=xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var tituloRadio = xmlDoc.getElementsByTagName("title")[3].innerHTML;
  var opcionesRadio = [];
  var nopt = xmlDoc.getElementById("jklm_001").getElementsByTagName('option').length;
-  for (i = 0; i < nopt; i++) { 
-    opcionesRadio[i] = xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
- }
+ for (i = 0; i < nopt; i++) { 
+    opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
+ }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
+ var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ }
+}
 
 
  // MULTIPLE
@@ -164,23 +168,28 @@ function ponerDatosCheckboxHtml(t,opt){
     var input = document.createElement("input");
     var label = document.createElement("label");
     label.innerHTML=opt[i];
-    label.setAttribute("for", "color_"+i);
+    label.setAttribute("for", "historia_"+i);
     input.type="checkbox";
-    input.name="color";
-    input.id="color_"+i;;    
+    input.name="historia";
+    input.id="historia_"+i;;    
     checkboxContainer.appendChild(input);
     checkboxContainer.appendChild(label);
  }  
 }
 
 function ponerDatosRadioHtml(t,opt){
+ var radioContainer=document.getElementById('radioDiv');
   document.getElementById("tituloRadio").innerHTML=t;
-  var select = document.getElementsByTagName("radio")[0];
   for (i = 0; i < opt.length; i++) { 
-    var option = document.createElement("option");
-    option.text = opt[i];
-    option.value=i+1;
-    select.options.add(option);
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+   label.setAttribute("for", "historia_"+i);
+    input.type="radio";
+    input.name="historia";
+    input.id="historia_"+i;;    
+    checkboxContainer.appendChild(input);
+    checkboxContainer.appendChild(label);
  }  
 }
 
