@@ -194,6 +194,17 @@ function ponerDatosRadioHtml(t,opt){
  }  
 }
 
+function ponerDatosSelectHtml(t,opt){
+  document.getElementById("tituloMultiple").innerHTML=t;
+  var multiple = document.getElementsByTagName("select")[0];
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+
 
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
