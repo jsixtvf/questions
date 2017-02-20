@@ -68,7 +68,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox[i]=xmlDoc.getElementById("jklm_004").getElementsByTagName("answer")[i].innerHTML;
  }
-}
+
 
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -79,7 +79,10 @@ function gestionarXml(dadesXml){
     opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
+var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
  }
 }
 
@@ -184,7 +187,7 @@ function ponerDatosRadioHtml(t,opt){
     label.innerHTML=opt[i];
    label.setAttribute("for", "historia1_"+i);
     input.type="radio";
-    input.name="historia1";
+    input.name="historia";
     input.id="historia1_"+i;;    
     radioContainer.appendChild(input);
     radioContainer.appendChild(label);
