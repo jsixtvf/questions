@@ -38,6 +38,18 @@
 		<option>d) Prehistoria, Edad Antigua, Edad Media, Edad Moderna y Contemporánea</option>
 		<answer>1</answer>
 	</question>
+	
+	<question id='jklm_009'>
+		<type>multiple</type>
+		<title>9.- En el periodo medieval, era el estamento más alto después del rey. No pagaban impuestos. ¿A qué grupo social corresponde la descripción?</title>
+		<option>a) Los campesinos</option>
+		<option>b) El clero</option>
+		<option>c) La nobleza</option>
+		<option>d) Señores feudales</option>
+		<answer>2</answer>
+		<answer>3</answer>
+	</question>
+	
 	<!--Prehistoria (Juan Sixto)-->
 	<question id='jklm_002'>
 		<type>radio</type>
@@ -71,16 +83,7 @@
 		<title>8.- La edad media en Europa tuvo un periodo de (1000, 1500, 2000):</title>
 		<answer>1000</answer>
 	</question>
-	<question id='jklm_009'>
-		<type>multiple</type>
-		<title>9.- En el periodo medieval, era el estamento más alto después del rey. No pagaban impuestos. ¿A qué grupo social corresponde la descripción?</title>
-		<option>a) Los campesinos</option>
-		<option>b) El clero</option>
-		<option>c) La nobleza</option>
-		<option>d) Señores feudales</option>
-		<answer>2</answer>
-		<answer>3</answer>
-	</question>
+	
 	<question id='jklm_010'>
 		<type>multiple</type>
 		<title>10.- Cuando no había guerra declarada, ¿qué distracciones tenían los señores?</title>
