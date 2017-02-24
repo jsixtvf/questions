@@ -85,20 +85,18 @@ var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').leng
  //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
  }
 
-
-
  // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloMultiple = xmlDoc.getElementsByTagName("title")[2].innerHTML;
+ var tituloMultiple = xmlDoc.getElementsByTagName("title")[4].innerHTML;
  var opcionesMultiple = [];
- var nopt = xmlDoc.getElementById("jklm_00").getElementsByTagName('option').length;
+ var nopt = xmlDoc.getElementById("jklm_009").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox[i]=xmlDoc.getElementById("jklm_00").getElementsByTagName('option')[i].innerHTML;
+    opcionesMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
- var nres = xmlDoc.getElementById("jklm_00").getElementsByTagName('answer').length;
+ ponerDatosMultiplehtml(tituloMultiple,opcionesMultiple);
+ var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
-  respuestasCheckbox[i]=xmlDoc.getElementById("jklm_00").getElementsByTagName("answer")[i].innerHTML;
+  respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
  }
 }
 
@@ -209,7 +207,7 @@ function ponerDatosRadioHtml(t,opt){
 
 function ponerDatosMultipleHtml(t,opt){
   document.getElementById("tituloMultiple").innerHTML=t;
-  var multiple = document.getElementsByTagName("select")[0];
+  var multiple = document.getElementsByTagName("multiple")[0];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
