@@ -93,7 +93,7 @@ var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').leng
  for (i = 0; i < nopt; i++) { 
     opcionesMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosMultiplehtml(tituloMultiple,opcionesMultiple);
+ ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple);
  var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
