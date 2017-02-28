@@ -207,12 +207,13 @@ function ponerDatosRadioHtml(t,opt){
 
 function ponerDatosMultipleHtml(t,opt){
   document.getElementById('tituloMultiple').innerHTML=t;
-  var select = document.getElementById("mul").multiple=true;
+ // var select = document.getElementById("mul").multiple=true;
+ var select = document.getElementsByTagName("select")[0];
   for (i = 0; i < opt.length; i++) { 
-    var option2 = document.createElement("option");
+    var option = document.createElement("option");
     option.text = opt[i];
     option.value=i+1;
-    select.options.add(option2);
+    select.options.add(option);
  }  
 }
 
