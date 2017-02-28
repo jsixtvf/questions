@@ -208,7 +208,7 @@ function ponerDatosRadioHtml(t,opt){
 function ponerDatosMultipleHtml(t,opt){
   document.getElementById('tituloMultiple').innerHTML=t;
  // var select = document.getElementById("mul").multiple=true;
- var select = document.getElementsByTagName("select")[0];
+ var select = document.getElementsByTagName("select")[1];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
