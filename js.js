@@ -163,11 +163,11 @@ function corregirMultiple(){
  
   var sel = formElement.elements[2];  
   if (sel.selectedIndex==respuestasMultiple) {
-   darRespuestaHtml("P4: Correcto");
+   darRespuestaHtml("P5: Correcto");
    nota +=1;
   }
   else {
-   darRespuestaHtml("P4: Incorrecto");
+   darRespuestaHtml("P5: Incorrecto");
   }
      
 }
