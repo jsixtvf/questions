@@ -17,6 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
+   corregirRadio();
+   corregirMultiple();
   /* presentarNota(); */
    return false;
  }
@@ -136,7 +138,7 @@ function corregirCheckbox(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
-  for (i = 0; i < f.historia.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+  for (i = 0; i < f.historia.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.historia[i].checked) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasCheckbox.length; j++) {
@@ -157,6 +159,33 @@ function corregirCheckbox(){
    }
   }
 }
+
+function CorregirRadio(){
+ 
+ var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
+   if (f.historia1[i].checked) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestasRadio.length; j++) {
+     if (i==respuestasRadio[j]) escorrecta[i]=true;
+    }
+   } 
+  }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.historia1.length; i++) {   
+   if (f.historia1[i].checked) {
+    if (escorrecta[i]) {
+     nota +=1.0/respuestasRadio.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P3: "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestasRadio.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P3: "+i+" incorrecta");
+    }   
+   }
+  }
+}
+ 
 
 //****************************************************************************************************
 // poner los datos recibios en el HTML
