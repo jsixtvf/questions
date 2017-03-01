@@ -161,15 +161,15 @@ function corregirCheckbox(){
 
 function corregirRadio(){
  
-  var sel2 = formElement.elements[2];  
+/*  var sel2 = formElement.elements[2];  
   if (sel2.selectedIndex==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
   else darRespuestaHtml("P4: Incorrecto");
      
-}
- /*var f2=formElement;
+}*/
+ var f2=formElement;
   var escorrecta1 = [];
   for (i = 0; i < f2.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
    if (f2.historia1[i].checked) {
@@ -190,7 +190,8 @@ function corregirRadio(){
      darRespuestaHtml("P3: "+i+" incorrecta");
     }   
    }
-  }*/
+  }
+}
 
  
 
