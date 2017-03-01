@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   corregirRadio();
-  // corregirMultiple();
+   //corregirRadio();
+   corregirMultiple();
    presentarNota();
    return false; 
  }
