@@ -85,7 +85,7 @@ function gestionarXml(dadesXml){
  //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
  //for (i = 0; i < nres; i++) { 
  //respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[5].innerHTML);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
  //}
 
  // MULTIPLE
@@ -162,8 +162,8 @@ function corregirCheckbox(){
 
 function corregirRadio(){
  
-  var rad = formElement.elements[2];  
-  if (rad.selectedIndex2==respuestaRadio) {
+  var sel = formElement.elements[2];  
+  if (sel.checked==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
