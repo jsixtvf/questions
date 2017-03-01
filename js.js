@@ -2,7 +2,7 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestaRadio =null;
+var respuestaRadio = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-  /*corregirRadio();
-   corregirMultiple();
+   corregirRadio();
+  /* corregirMultiple();
    presentarNota();*/
    return false; 
  }
@@ -72,7 +72,6 @@ function gestionarXml(dadesXml){
   respuestasCheckbox[i]=xmlDoc.getElementById("jklm_004").getElementsByTagName("answer")[i].innerHTML;
  }
 
-
  // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var tituloRadio = xmlDoc.getElementsByTagName("title")[3].innerHTML;
@@ -82,11 +81,11 @@ function gestionarXml(dadesXml){
     opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
- //for (i = 0; i < nres; i++) { 
- //respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
- //}
+ var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+ respuestaRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
+ }
 
  // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -162,7 +161,7 @@ function corregirCheckbox(){
 
 function corregirRadio(){
  
-  var sel2 = formElement.elements[1];  
+  var sel2 = formElement.elements[2];  
   if (sel2.selectedIndex==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
