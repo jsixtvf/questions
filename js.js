@@ -187,8 +187,8 @@ function corregirRadio(){
 
 function corregirMultiple(){
  
-  var sel = formElement.elements[2];  
-  if (sel.selectedIndex==respuestasMultiple) {
+  var sel2 = formElement.elements[2];  
+  if (sel2.selectedIndex==respuestasMultiple) {
    darRespuestaHtml("P5: Correcto");
    nota +=1;
   }else {
