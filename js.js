@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   corregirRadio();
-  /* corregirMultiple();
+   /*corregirRadio();
+   corregirMultiple();
    presentarNota();*/
    return false; 
  }
@@ -159,16 +159,16 @@ function corregirCheckbox(){
   }
 }
 
-function corregirRadio(){
+/*function corregirRadio(){
  
-/*  var sel2 = formElement.elements[2];  
+  var sel2 = formElement.elements[2];  
   if (sel2.selectedIndex==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
   else darRespuestaHtml("P4: Incorrecto");
      
-}*/
+}
  var f2=formElement;
   var escorrecta1 = [];
   for (i = 0; i < f2.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
@@ -193,7 +193,7 @@ function corregirRadio(){
   }
 }
 
- 
+*/ 
 
 //****************************************************************************************************
 // poner los datos recibios en el HTML
