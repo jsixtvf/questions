@@ -38,11 +38,12 @@ window.onload = function(){
 function gestionarXml(dadesXml){
  var xmlDoc = dadesXml.responseXML; //Parse XML to xmlDoc
  
- //NUMBER
+ //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloInput=xmlDoc.getElementsByTagName("title")[0].innerHTML;
  ponerDatosInputHtml(tituloInput);
- respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respCorrecta=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
  
   //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
