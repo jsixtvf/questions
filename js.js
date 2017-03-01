@@ -106,7 +106,7 @@ var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').leng
 function corregirNumber(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[0].text;     
+  var s=formElement.elements[0].textContent;     
   if (s==respCorrecta) {
    darRespuestaHtml("P1: Exacto!");
    nota +=1;
