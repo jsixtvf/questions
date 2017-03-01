@@ -82,11 +82,11 @@ function gestionarXml(dadesXml){
     opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
-var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
- for (i = 0; i < nres; i++) { 
-  respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
- //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
- }
+ //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
+ //for (i = 0; i < nres; i++) { 
+ //respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
+ //}
 
  // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
