@@ -164,11 +164,11 @@ function corregirRadio(){
  
   var rad = formElement.elements[2];  
   if (rad.selectedIndex==respuestaRadio) {
-   darRespuestaHtml("P2: Correcto");
+   darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
-  else darRespuestaHtml("P2: Incorrecto");
- 
+  else{ darRespuestaHtml("P4: Incorrecto");
+      }
 }
  /*var f2=formElement;
   var escorrecta1 = [];
