@@ -112,7 +112,8 @@ function corregirNumber(){
    nota +=1;
   }
   else {
-    if (s!=respCorrecta) darRespuestaHtml("P1: Te has equivocado");
+   darRespuestaHtml("P1: Te has equivocado");
+   // if (s!=respCorrecta) darRespuestaHtml("P1: Te has equivocado");
     
   }
 }
