@@ -17,7 +17,7 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   //corregirRadio();
+   corregirRadio();
    corregirMultiple();
    presentarNota();
    return false; 
@@ -84,7 +84,7 @@ function gestionarXml(dadesXml){
  //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
  //for (i = 0; i < nres; i++) { 
  //respuestaRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[2].innerHTML);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
  //}
 
  // MULTIPLE
@@ -176,19 +176,19 @@ function corregirRadio(){
    if (f.historia1[i].checked) {
     if (escorrecta[i]) {
      nota +=1.0/respuestaRadio.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" correcta");    
+     darRespuestaHtml("P4: "+i+" correcta");    
     } else {
      nota -=1.0/respuestaRadio.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" incorrecta");
+     darRespuestaHtml("P4: "+i+" incorrecta");
     }   
    }
   }
 }
 
-function corregirMultiple(opt){
+function corregirMultiple(){
  
  var sel = formElement.elements[1]; 
- for(i=0;i<opt.length;i++){
+ for(i=0;i<sel.length;i++){
   if (sel.selectedIndex==respuestasMultiple[i]){
    darRespuestaHtml("P5: Correcto");
    nota +=1;
