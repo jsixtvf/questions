@@ -2,7 +2,7 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestaRadio = [];
+var respuestaRadio = null;
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -17,9 +17,9 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   /*corregirRadio();
+  // corregirRadio();
    corregirMultiple();
-   presentarNota();*/
+   presentarNota();
    return false; 
  }
  
@@ -159,7 +159,7 @@ function corregirCheckbox(){
   }
 }
 
-/*function corregirRadio(){
+function corregirMultiple(){
  
   var sel2 = formElement.elements[2];  
   if (sel2.selectedIndex==respuestaRadio) {
@@ -169,20 +169,24 @@ function corregirCheckbox(){
   else darRespuestaHtml("P4: Incorrecto");
      
 }
- var f2=formElement;
-  var escorrecta1 = [];
-  for (i = 0; i < f2.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
-   if (f2.historia1[i].checked) {
-    escorrecta1[i]=false;     
+
+
+function corregirRadio(){
+ 
+  var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
+   if (f.historia1[i].checked) {
+    escorrecta[i]=false;     
     for (j = 0; j < respuestaRadio.length; j++) {
-     if (i==respuestaRadio[j]) escorrecta1[i]=true;
+     if (i==respuestaRadio[j]) escorrecta[i]=true;
     }
    } 
   }
   //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
-  for (i = 0; i < f2.historia1.length; i++) {   
-   if (f2.historia1[i].checked) {
-    if (escorrecta1[i]) {
+  for (i = 0; i < f.historia1.length; i++) {   
+   if (f.historia1[i].checked) {
+    if (escorrecta[i]) {
      nota +=1.0/respuestaRadio.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+i+" correcta");    
     } else {
@@ -192,8 +196,10 @@ function corregirCheckbox(){
    }
   }
 }
+ 
 
-*/ 
+
+ 
 
 //****************************************************************************************************
 // poner los datos recibios en el HTML
