@@ -162,8 +162,8 @@ function corregirCheckbox(){
 
 function corregirRadio(){
  
-  var sel = formElement.elements[2];  
-  if (sel.checked==respuestaRadio) {
+  var sel2 = formElement.elements[1];  
+  if (sel2.checked==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
