@@ -2,7 +2,7 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestaRadio = [];
+var respuestaRadio =null;
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
