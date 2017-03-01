@@ -17,10 +17,10 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   corregirRadio();
- /*corregirMultiple();
-   presentarNota();
-   return false;*/ 
+ /*corregirRadio();
+ corregirMultiple();
+   presentarNota();*/
+   return false; 
  }
  
  //LEER XML de xml/preguntas.xml
