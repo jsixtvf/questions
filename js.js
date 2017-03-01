@@ -162,10 +162,10 @@ function corregirCheckbox(){
 
 function corregirRadio(){
  
- var f=formElement;
+ var f2=formElement;
   var escorrecta = [];
-  for (i = 0; i < f.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
-   if (f.historia1[i].checked) {
+  for (i = 0; i < f2.historia1.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
+   if (f2.historia1[i].checked) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasRadio.length; j++) {
      if (i==respuestasRadio[j]) escorrecta[i]=true;
@@ -173,8 +173,8 @@ function corregirRadio(){
    } 
   }
   //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
-  for (i = 0; i < f.historia1.length; i++) {   
-   if (f.historia1[i].checked) {
+  for (i = 0; i < f2.historia1.length; i++) {   
+   if (f2.historia1[i].checked) {
     if (escorrecta[i]) {
      nota +=1.0/respuestasRadio.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+i+" correcta");    
