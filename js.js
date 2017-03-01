@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   corregirRadio();
-   /*corregirMultiple();
+  /*corregirRadio();
+   corregirMultiple();
    presentarNota();*/
    return false; 
  }
@@ -163,7 +163,7 @@ function corregirCheckbox(){
 function corregirRadio(){
  
   var sel2 = formElement.elements[1];  
-  if (sel2.checked==respuestaRadio) {
+  if (sel2.selectedIndex==respuestaRadio) {
    darRespuestaHtml("P4: Correcto");
    nota +=1;
   }
