@@ -18,8 +18,8 @@ window.onload = function(){
    corregirSelect();
    corregirCheckbox();
    corregirRadio();
-   corregirMultiple();
-  /* presentarNota(); */
+ /*corregirMultiple();
+   presentarNota(); */
    return false;
  }
  
