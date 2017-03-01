@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   corregirRadio();
-   corregirMultiple();
+  /* corregirRadio();
+   corregirMultiple();*/
    presentarNota();
    return false; 
  }
@@ -159,7 +159,7 @@ function corregirCheckbox(){
   }
 }
 
-function corregirRadio(){
+/*function corregirRadio(){
  
   var f=formElement;
   var escorrecta = [];
@@ -183,7 +183,7 @@ function corregirRadio(){
     }   
    }
   }
-}
+}*/
 
 function corregirMultiple(){
  
