@@ -185,16 +185,17 @@ function corregirRadio(){
   }
 }
 
-function corregirMultiple(){
+function corregirMultiple(opt){
  
-  var sel1 = formElement.elements[1];  
-  if (sel1.selectedIndex==respuestasMultiple) {
+ var sel = formElement.elements[1]; 
+ for(i=0;i<opt.length;i++){
+  if (sel.selectedIndex==respuestasMultiple[i]){
    darRespuestaHtml("P5: Correcto");
    nota +=1;
   }else {
    darRespuestaHtml("P5: Incorrecto");
   }
-     
+ }   
 }
   
 //****************************************************************************************************
