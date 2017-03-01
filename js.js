@@ -19,8 +19,8 @@ window.onload = function(){
    corregirCheckbox();
    corregirRadio();
  /*corregirMultiple();
-   presentarNota(); */
-   return false;
+   presentarNota();*/
+   return false; 
  }
  
  //LEER XML de xml/preguntas.xml
@@ -160,7 +160,7 @@ function corregirCheckbox(){
   }
 }
 
-function CorregirRadio(){
+function corregirRadio(){
  
  var f=formElement;
   var escorrecta = [];
