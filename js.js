@@ -85,7 +85,7 @@ function gestionarXml(dadesXml){
  //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
  //for (i = 0; i < nres; i++) { 
  //respuestasCheckbox[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[3].innerHTML);
+ respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[5].innerHTML);
  //}
 
  // MULTIPLE
