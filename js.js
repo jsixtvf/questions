@@ -2,8 +2,8 @@ var formElement=null;
 var respCorrecta=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
-var respuestaRadio = null;
-var respuestasMultiple = [];
+var respuestaRadio = [];
+var respuestasMultiple = null;
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
 //**************************************************************************************************** 
@@ -17,8 +17,8 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-  /* corregirRadio();
-   corregirMultiple();*/
+   corregirRadio();
+   corregirMultiple();
    presentarNota();
    return false; 
  }
@@ -81,12 +81,11 @@ function gestionarXml(dadesXml){
     opcionesRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosRadioHtml(tituloRadio,opcionesRadio);
- respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
- //var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
- //for (i = 0; i < nres; i++) { 
- //respuestaRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
-
- //}
+ //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+   var nres = xmlDoc.getElementById("jklm_001").getElementsByTagName('answer').length;
+   for (i = 0; i < nres; i++) { 
+    respuestaRadio[i]=xmlDoc.getElementById("jklm_001").getElementsByTagName("answer")[i].innerHTML;
+ }
 
  // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -97,10 +96,11 @@ function gestionarXml(dadesXml){
     opcionesMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple);
- var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
- for (i = 0; i < nres; i++) { 
-  respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
- }
+ respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+ //var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
+ //for (i = 0; i < nres; i++) { 
+ // respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
+ //}
 }
 
 //****************************************************************************************************
@@ -160,7 +160,7 @@ function corregirCheckbox(){
   }
 }
 
-/*function corregirRadio(){
+function corregirRadio(){
  
   var f=formElement;
   var escorrecta = [];
@@ -184,7 +184,7 @@ function corregirCheckbox(){
     }   
    }
   }
-}*/
+}
 
 function corregirMultiple(f){
  
