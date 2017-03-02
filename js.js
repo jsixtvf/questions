@@ -185,7 +185,7 @@ function corregirCheckbox(){
   }
 }*/
 
-function corregirMultiple(){
+function corregirMultiple(f){
  
  var sel = formElement.elements[2]; 
  for(i=0;i<sel.length;i++){
