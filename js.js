@@ -189,7 +189,7 @@ function corregirRadio(){
 function corregirMultiple(){
  
  var selm = formElement.elements[2]; 
- for(i=0;i<selm.length;i++){
+  for(i=0;i<respuestasMultiple.length;i++){
   if (selm.selectedIndex==respuestasMultiple[i]){
    darRespuestaHtml("P5: Correcto");
    nota +=1;
