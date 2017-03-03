@@ -202,12 +202,15 @@ function corregirMultiple(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
+  boolean valido=false;
   for (i = 0; i < f.mul.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.mul[i].selected) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasMultiple.length; j++) {
-     if (i==respuestasMultiple[j]) escorrecta[i]=true;
-    }
+     if (i==respuestasMultiple[j]){
+      escorrecta[i]=true;
+      valido=true;
+    }else valido=false
    } 
   }
   //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
@@ -220,6 +223,7 @@ function corregirMultiple(){
      nota -=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+"posicion "+i+" incorrecta");
     }   
+    if(valido) darRespuestaHtml("Tienen todas las opciones correctas seleccionadas. Respuesta correcta");
    }
   }
 }
