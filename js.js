@@ -202,8 +202,8 @@ function corregirMultiple(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
-  for (i = 0; i < f.historia.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
-   if (f.selm[i].selected) {
+  for (i = 0; i < f.mul.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
+   if (f.mul[i].selected) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasMultiple.length; j++) {
      if (i==respuestasMultiple[j]) escorrecta[i]=true;
@@ -211,8 +211,8 @@ function corregirMultiple(){
    } 
   }
   //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
-  for (i = 0; i < f.selm.length; i++) {   
-   if (f.selm[i].selected) {
+  for (i = 0; i < f.mul.length; i++) {   
+   if (f.mul[i].selected) {
     if (escorrecta[i]) {
      nota +=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+"posicion "+i+" correcta");    
