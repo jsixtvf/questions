@@ -17,7 +17,7 @@ window.onload = function(){
    corregirNumber();
    corregirSelect();
    corregirCheckbox();
-   //corregirRadio();
+   corregirRadio();
    //corregirMultiple();
    presentarNota();
    return false; 
@@ -241,7 +241,7 @@ function ponerDatosRadioHtml(t,opt){
     label.innerHTML=opt[i];
    label.setAttribute("for", "historia1_"+i);
     input.type="radio";
-    input.name="historia";
+    input.name="historia1";
     input.id="historia1_"+i;;    
     radioContainer.appendChild(input);
     radioContainer.appendChild(label);
