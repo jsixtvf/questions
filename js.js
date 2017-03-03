@@ -151,10 +151,10 @@ function corregirCheckbox(){
    if (f.historia[i].checked) {
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" correcta");    
+     darRespuestaHtml("P3: "+"posicion "+i+" correcta");    
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" incorrecta");
+     darRespuestaHtml("P3: "+"posicion "+i+" incorrecta");
     }   
    }
   }
@@ -177,10 +177,10 @@ function corregirRadio(){
    if (f.historia1[i].checked) {
     if (escorrecta[i]) {
      nota +=1.0/respuestaRadio.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" correcta");    
+     darRespuestaHtml("P4: "+"posicion "+i+" correcta");    
     } else {
      nota -=1.0/respuestaRadio.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" incorrecta");
+     darRespuestaHtml("P4: "+"posicion "+i+" incorrecta");
     }   
    }
   }
