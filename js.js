@@ -186,7 +186,7 @@ function corregirRadio(){
   }
 }
 
-function corregirMultiple(f){
+function corregirMultiple(){
  
  var selm = formElement.elements[2]; 
  for(i=0;i<selm.length;i++){
