@@ -222,10 +222,10 @@ function corregirMultiple(){
     
     if (escorrecta[i]) {
      nota +=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+"posicion "+i+" correcta");    
+     darRespuestaHtml("P5 "+"posicion "+i+" correcta");    
     } else {
      nota -=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+"posicion "+i+" incorrecta");
+     darRespuestaHtml("P5: "+"posicion "+i+" incorrecta");
     }  
     
    }
