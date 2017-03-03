@@ -188,7 +188,7 @@ function corregirRadio(){
 
 function corregirMultiple(){
  
- var selm = formElement.elements[2]; 
+ /*var selm = formElement.elements[2]; 
   for(i=0;i<respuestasMultiple.length;i++){
   if (selm.selectedIndex==respuestasMultiple[i]){
    darRespuestaHtml("P5: Correcto");
@@ -196,8 +196,34 @@ function corregirMultiple(){
   }else{ 
    darRespuestaHtml("P5: Incorrecto");
   }
- }   
+ }   */
+ 
+ 
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
+   if (f.selm[i].selected) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestasMultiple.length; j++) {
+     if (i==respuestasMultiple[j]) escorrecta[i]=true;
+    }
+   } 
+  }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.selm.length; i++) {   
+   if (f.selm[i].selected) {
+    if (escorrecta[i]) {
+     nota +=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P3: "+"posicion "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P3: "+"posicion "+i+" incorrecta");
+    }   
+   }
+  }
 }
+
   
 //****************************************************************************************************
 // poner los datos recibios en el HTML
