@@ -189,7 +189,7 @@ function corregirRadio(){
 function corregirMultiple(){
  
  var selm = formElement.elements[2]; 
- // for(i=0;i<respuestasMultiple.length;i++){
+  for(i=0;i<respuestasMultiple.length;i++){
   if (selm.selectedIndex==respuestasMultiple[i]){
    darRespuestaHtml("P5: Correcto");
    nota +=1;
@@ -197,7 +197,7 @@ function corregirMultiple(){
    darRespuestaHtml("P5: Incorrecto");
   }
  }   
-//}
+}
   
 //****************************************************************************************************
 // poner los datos recibios en el HTML
