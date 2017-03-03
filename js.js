@@ -202,16 +202,16 @@ function corregirMultiple(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
-  var boolean valido=false;
+  x = new Boolean(false);
   for (i = 0; i < f.mul.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.mul[i].selected) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasMultiple.length; j++) {
      if (i==respuestasMultiple[j]){
       escorrecta[i]=true;
-      valido=true;
+      x=true;
     }else{ 
-     valido=false;
+     x=false;
     }
    } 
   }
@@ -231,7 +231,7 @@ function corregirMultiple(){
    }
    
   }
-    if(valido){
+    if(x){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }
 }
