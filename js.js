@@ -96,11 +96,11 @@ function gestionarXml(dadesXml){
     opcionesMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple);
- respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
- //var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
- //for (i = 0; i < nres; i++) { 
- // respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
- //}
+ //respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+ var nres = xmlDoc.getElementById("jklm_009").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
+ }
 }
 
 //****************************************************************************************************
