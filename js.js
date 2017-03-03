@@ -202,7 +202,7 @@ function corregirMultiple(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
-  boolean valido=false;
+  var boolean valido=false;
   for (i = 0; i < f.mul.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.mul[i].selected) {
     escorrecta[i]=false;     
