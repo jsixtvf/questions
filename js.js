@@ -213,6 +213,7 @@ function corregirMultiple(){
     }else valido=false
    } 
   }
+  }
   //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
   for (i = 0; i < f.mul.length; i++) {   
    if (f.mul[i].selected) {
@@ -223,7 +224,7 @@ function corregirMultiple(){
      nota -=1.0/respuestasMultiple.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+"posicion "+i+" incorrecta");
     }   
-    if(valido) darRespuestaHtml("Tienen todas las opciones correctas seleccionadas. Respuesta correcta");
+    if(valido) darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
    }
   }
 }
