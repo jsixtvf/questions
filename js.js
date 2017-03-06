@@ -422,7 +422,43 @@ function corregirText2(){
 }
 
 
+function corregirMultiple1(){
 
+  var f=formElement;
+  var escorrecta = [];
+  x = new Boolean(false);
+  for (i = 0; i < f.mul1.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
+   if (f.mul1[i].selected) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestasMultiple1.length; j++) {
+     if (i==respuestasMultiple1[j]){
+      escorrecta[i]=true;
+      x=true;
+    }else{ 
+     x=false;
+    }
+   } 
+  }
+ }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.mul1.length; i++) {   
+   if (f.mul1[i].selected) {
+    
+    if (escorrecta[i]) {
+     nota +=1.0/respuestasMultiple1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P5 "+"posicion "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestasMultiple1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P5: "+"posicion "+i+" incorrecta");
+    }  
+    
+   }
+   
+  }
+    if(x){
+     darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
+    }
+}
 
   
 //****************************************************************************************************
