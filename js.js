@@ -338,37 +338,7 @@ function corregirMultiple(){
 }
 
 
-function ponerDatosRadioHtml1(t,opt){
- var radioContainer=document.getElementById('radioDiv1');
-  document.getElementById('tituloRadio1').innerHTML=t;
-  for (i = 0; i < opt.length; i++) { 
-    var input = document.createElement("input");
-    var label = document.createElement("label");
-    label.innerHTML=opt[i];
-   label.setAttribute("for", "historia2_"+i);
-    input.type="radio";
-    input.name="historia2";
-    input.id="historia2_"+i;;    
-    radioContainer.appendChild(input);
-    radioContainer.appendChild(label);
- }  
-}
 
-function ponerDatosRadioHtml2(t,opt){
- var radioContainer=document.getElementById('radioDiv2');
-  document.getElementById('tituloRadio2').innerHTML=t;
-  for (i = 0; i < opt.length; i++) { 
-    var input = document.createElement("input");
-    var label = document.createElement("label");
-    label.innerHTML=opt[i];
-   label.setAttribute("for", "historia3_"+i);
-    input.type="radio";
-    input.name="historia3";
-    input.id="historia3_"+i;;    
-    radioContainer.appendChild(input);
-    radioContainer.appendChild(label);
- }  
-}
 
   
 //****************************************************************************************************
@@ -424,6 +394,90 @@ function ponerDatosMultipleHtml(t,opt){
   document.getElementById('tituloMultiple').innerHTML=t;
  // var select = document.getElementById("mul").multiple=true;
  var select = document.getElementsByTagName("select")[1];
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+
+function ponerDatosRadioHtml1(t,opt){
+ var radioContainer=document.getElementById('radioDiv1');
+  document.getElementById('tituloRadio1').innerHTML=t;
+  for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+   label.setAttribute("for", "historia2_"+i);
+    input.type="radio";
+    input.name="historia2";
+    input.id="historia2_"+i;;    
+    radioContainer.appendChild(input);
+    radioContainer.appendChild(label);
+ }  
+}
+
+function ponerDatosRadioHtml2(t,opt){
+ var radioContainer=document.getElementById('radioDiv2');
+  document.getElementById('tituloRadio2').innerHTML=t;
+  for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+   label.setAttribute("for", "historia3_"+i);
+    input.type="radio";
+    input.name="historia3";
+    input.id="historia3_"+i;;    
+    radioContainer.appendChild(input);
+    radioContainer.appendChild(label);
+ }  
+}
+
+function ponerDatosInputHtml1(t){
+ document.getElementById("tituloInput1").innerHTML = t;
+}
+
+function ponerDatosInputHtml2(t){
+ document.getElementById("tituloInput2").innerHTML = t;
+}
+
+
+function ponerDatosMultipleHtml1(t,opt){
+  document.getElementById('tituloMultiple1').innerHTML=t;
+ // var select = document.getElementById("mul").multiple=true;
+ var select = document.getElementsByTagName("select")[2];
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
+
+function ponerDatosCheckboxHtml1(t,opt){
+ var checkboxContainer=document.getElementById('checkboxDiv1');
+ document.getElementById('tituloCheckbox1').innerHTML = t;
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "historia4_"+i);
+    input.type="checkbox";
+    input.name="historia4";
+    input.id="historia4_"+i;;    
+    checkboxContainer.appendChild(input);
+    checkboxContainer.appendChild(label);
+ }  
+}
+
+function ponerDatosInputHtml3(t){
+ document.getElementById("tituloInput3").innerHTML = t;
+}
+
+function ponerDatosSelectHtml1(t,opt){
+  document.getElementById("tituloSelect1").innerHTML=t;
+  var select = document.getElementsByTagName("select")[3];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
