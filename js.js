@@ -121,13 +121,13 @@ function gestionarXml(dadesXml){
 
 // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloRadio = xmlDoc.getElementsByTagName("title")[5].innerHTML;
+ var tituloRadio1 = xmlDoc.getElementsByTagName("title")[5].innerHTML;
  var opcionesRadio1 = [];
  var nopt = xmlDoc.getElementById("jklm_002").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
     opcionesRadio1[i]=xmlDoc.getElementById("jklm_002").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosRadioHtml1(tituloRadio,opcionesRadio1);
+ ponerDatosRadioHtml1(tituloRadio1,opcionesRadio1);
  //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
    var nres = xmlDoc.getElementById("jklm_002").getElementsByTagName('answer').length;
    for (i = 0; i < nres; i++) { 
@@ -136,13 +136,13 @@ function gestionarXml(dadesXml){
 
 // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloRadio = xmlDoc.getElementsByTagName("title")[6].innerHTML;
+ var tituloRadio2 = xmlDoc.getElementsByTagName("title")[6].innerHTML;
  var opcionesRadio2 = [];
  var nopt = xmlDoc.getElementById("jklm_006").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
     opcionesRadio2[i]=xmlDoc.getElementById("jklm_006").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosRadioHtml2(tituloRadio,opcionesRadio2);
+ ponerDatosRadioHtml2(tituloRadio2,opcionesRadio2);
  //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
    var nres = xmlDoc.getElementById("jklm_006").getElementsByTagName('answer').length;
    for (i = 0; i < nres; i++) { 
@@ -151,27 +151,27 @@ function gestionarXml(dadesXml){
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
- var tituloInput=xmlDoc.getElementsByTagName("title")[7].innerHTML;
+ var tituloInput1=xmlDoc.getElementsByTagName("title")[7].innerHTML;
  ponerDatosInputHtml1(tituloInput);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
  respCorrecta1=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
- var tituloInput=xmlDoc.getElementsByTagName("title")[8].innerHTML;
+ var tituloInput2=xmlDoc.getElementsByTagName("title")[8].innerHTML;
  ponerDatosInputHtml2(tituloInput);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
  respCorrecta2=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
 
 // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloMultiple = xmlDoc.getElementsByTagName("title")[9].innerHTML;
+ var tituloMultiple1 = xmlDoc.getElementsByTagName("title")[9].innerHTML;
  var opcionesMultiple1 = [];
  var nopt = xmlDoc.getElementById("jklm_010").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
     opcionesMultiple1[i]=xmlDoc.getElementById("jklm_010").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple1);
+ ponerDatosMultipleHtml(tituloMultiple1,opcionesMultiple1);
  //respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
  var nres = xmlDoc.getElementById("jklm_010").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
@@ -181,13 +181,13 @@ function gestionarXml(dadesXml){
 
  //CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloCheckbox = xmlDoc.getElementsByTagName("title")[10].innerHTML;
+ var tituloCheckbox1 = xmlDoc.getElementsByTagName("title")[10].innerHTML;
  var opcionesCheckbox1 = [];
  var nopt = xmlDoc.getElementById("jklm_011").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
     opcionesCheckbox1[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox1);
+ ponerDatosCheckboxHtml(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("jklm_011").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox1[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName("answer")[i].innerHTML;
@@ -195,20 +195,20 @@ function gestionarXml(dadesXml){
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
- var tituloInput=xmlDoc.getElementsByTagName("title")[11].innerHTML;
+ var tituloInput3=xmlDoc.getElementsByTagName("title")[11].innerHTML;
  ponerDatosInputHtml3(tituloInput);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
  respCorrecta3=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
 
   //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloSelect=xmlDoc.getElementsByTagName("title")[12].innerHTML;
+ var tituloSelect1=xmlDoc.getElementsByTagName("title")[12].innerHTML;
  var opcionesSelect1 = [];
  var nopt = xmlDoc.getElementById("jklm_013").getElementsByTagName('option').length;
   for (i = 0; i < nopt; i++) { 
     opcionesSelect1[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
  }
- ponerDatosSelectHtml1(tituloSelect,opcionesSelect1);
+ ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
  respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
 
 
