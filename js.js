@@ -210,7 +210,7 @@ function gestionarXml(dadesXml){
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
  respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
-
+}
 
 //****************************************************************************************************
 //implementación de la corrección
