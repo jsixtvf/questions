@@ -177,7 +177,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasMultiple1[i]=xmlDoc.getElementById("jklm_010").getElementsByTagName("answer")[i].innerHTML;
  }
-}
+
 
  //CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
