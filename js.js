@@ -117,7 +117,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
  }
-}
+
 
 // RADIO
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
