@@ -390,6 +390,36 @@ function corregirRadio2(){
   }
 }
 
+function corregirText1(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[2].value;     
+  if (s==respCorrecta1) {
+   darRespuestaHtml("P8: Exacto!");
+   nota +=1;
+  }
+  else {
+   darRespuestaHtml("P8: Te has equivocado");
+   // if (s!=respCorrecta) darRespuestaHtml("P1: Te has equivocado");
+    
+  }
+}
+
+
+function corregirText2(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[3].value;     
+  if (s==respCorrecta2) {
+   darRespuestaHtml("P9: Exacto!");
+   nota +=1;
+  }
+  else {
+   darRespuestaHtml("P9: Te has equivocado");
+   // if (s!=respCorrecta) darRespuestaHtml("P1: Te has equivocado");
+    
+  }
+}
 
 
 
