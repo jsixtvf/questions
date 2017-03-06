@@ -27,6 +27,14 @@ window.onload = function(){
    corregirCheckbox();
    corregirRadio();
    corregirMultiple();
+   corregirRadio1();
+   corregirRadio2();
+   corregirText1();
+   corregirText2();
+   corregirMultiple1();
+   corregirCheckbox1();
+   corregirText3();
+   corregirSelect1();
    presentarNota();
    return false; 
  }
