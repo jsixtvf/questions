@@ -446,10 +446,10 @@ function corregirMultiple1(){
     
     if (escorrecta[i]) {
      nota +=1.0/respuestasMultiple1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P5 "+"posicion "+i+" correcta");    
+     darRespuestaHtml("P10 "+"posicion "+i+" correcta");    
     } else {
      nota -=1.0/respuestasMultiple1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P5: "+"posicion "+i+" incorrecta");
+     darRespuestaHtml("P10: "+"posicion "+i+" incorrecta");
     }  
     
    }
@@ -458,6 +458,58 @@ function corregirMultiple1(){
     if(x){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }
+}
+
+function corregirCheckbox1(){
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia4.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
+   if (f.historia4[i].checked) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestasCheckbox1.length; j++) {
+     if (i==respuestasCheckbox1[j]) escorrecta[i]=true;
+    }
+   } 
+  }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.historia4.length; i++) {   
+   if (f.historia4[i].checked) {
+    if (escorrecta[i]) {
+     nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P11: "+"posicion "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P11: "+"posicion "+i+" incorrecta");
+    }   
+   }
+  }
+}
+
+function corregirText3(){
+  
+  var s=formElement.elements[4].value;     
+  if (s==respCorrecta3) {
+   darRespuestaHtml("P12: Exacto!");
+   nota +=1;
+  }
+  else {
+   darRespuestaHtml("P12: Te has equivocado");
+   // if (s!=respCorrecta) darRespuestaHtml("P1: Te has equivocado");
+    
+  }
+}
+
+function corregirSelect1(){
+  //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
+  //para implementarlo con type radio, usar value para enumerar las opciones <input type='radio' value='1'>...
+  //luego comparar ese value con el value guardado en answer
+  var sel1 = formElement.elements[5];  
+  if (sel1.selectedIndex==respuestaSelect1) {
+   darRespuestaHtml("P13: Correcto");
+   nota +=1;
+  }
+  else darRespuestaHtml("P13: Incorrecto");
 }
 
   
