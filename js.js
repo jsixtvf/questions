@@ -1,9 +1,17 @@
 var formElement=null;
 var respCorrecta=null;
+var respCorrecta1=null;
+var respCorrecta2=null;
+var respCorrecta3=null;
 var respuestaSelect=null;
+var respuestaSelect1=null;
 var respuestasCheckbox = [];
+var respuestasCheckbox1 = [];
 var respuestaRadio = [];
+var respuestaRadio1 = [];
+var respuestaRadio2 = [];
 var respuestasMultiple = [];
+var respuestasMultiple1 = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
 //**************************************************************************************************** 
@@ -102,6 +110,99 @@ function gestionarXml(dadesXml){
   respuestasMultiple[i]=xmlDoc.getElementById("jklm_009").getElementsByTagName("answer")[i].innerHTML;
  }
 }
+
+// RADIO
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloRadio = xmlDoc.getElementsByTagName("title")[5].innerHTML;
+ var opcionesRadio = [];
+ var nopt = xmlDoc.getElementById("jklm_002").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesRadio[i]=xmlDoc.getElementById("jklm_002").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosRadioHtml(tituloRadio,opcionesRadio);
+ //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+   var nres = xmlDoc.getElementById("jklm_002").getElementsByTagName('answer').length;
+   for (i = 0; i < nres; i++) { 
+    respuestaRadio1[i]=xmlDoc.getElementById("jklm_002").getElementsByTagName("answer")[i].innerHTML;
+ }
+
+// RADIO
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloRadio = xmlDoc.getElementsByTagName("title")[6].innerHTML;
+ var opcionesRadio = [];
+ var nopt = xmlDoc.getElementById("jklm_006").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesRadio[i]=xmlDoc.getElementById("jklm_006").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosRadioHtml(tituloRadio,opcionesRadio);
+ //respuestaRadio=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+   var nres = xmlDoc.getElementById("jklm_006").getElementsByTagName('answer').length;
+   for (i = 0; i < nres; i++) { 
+    respuestaRadio2[i]=xmlDoc.getElementById("jklm_006").getElementsByTagName("answer")[i].innerHTML;
+ }
+
+ //TEXT
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloInput=xmlDoc.getElementsByTagName("title")[7].innerHTML;
+ ponerDatosInputHtml(tituloInput);
+ //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respCorrecta1=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
+
+ //TEXT
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloInput=xmlDoc.getElementsByTagName("title")[8].innerHTML;
+ ponerDatosInputHtml(tituloInput);
+ //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respCorrecta2=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
+
+// MULTIPLE
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var tituloMultiple = xmlDoc.getElementsByTagName("title")[9].innerHTML;
+ var opcionesMultiple = [];
+ var nopt = xmlDoc.getElementById("jklm_010").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesMultiple[i]=xmlDoc.getElementById("jklm_010").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple);
+ //respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+ var nres = xmlDoc.getElementById("jklm_010").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasMultiple1[i]=xmlDoc.getElementById("jklm_010").getElementsByTagName("answer")[i].innerHTML;
+ }
+}
+
+ //CHECKBOX
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var tituloCheckbox = xmlDoc.getElementsByTagName("title")[10].innerHTML;
+ var opcionesCheckbox = [];
+ var nopt = xmlDoc.getElementById("jklm_011").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesCheckbox[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
+ var nres = xmlDoc.getElementById("jklm_011").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox1[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName("answer")[i].innerHTML;
+ }
+
+ //TEXT
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloInput=xmlDoc.getElementsByTagName("title")[11].innerHTML;
+ ponerDatosInputHtml(tituloInput);
+ //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respCorrecta3=xmlDoc.getElementsByTagName("answer")[0].innerHTML;
+
+  //SELECT
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloSelect=xmlDoc.getElementsByTagName("title")[12].innerHTML;
+ var opcionesSelect = [];
+ var nopt = xmlDoc.getElementById("jklm_013").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
+    opcionesSelect[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
+ }
+ ponerDatosSelectHtml(tituloSelect,opcionesSelect);
+ respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[1].innerHTML);
+
 
 //****************************************************************************************************
 //implementación de la corrección
