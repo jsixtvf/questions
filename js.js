@@ -337,6 +337,60 @@ function corregirMultiple(){
     }
 }
 
+function corregirRadio1(){
+ 
+  var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia2.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
+   if (f.historia2[i].checked) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestaRadio1.length; j++) {
+     if (i==respuestaRadio1[j]) escorrecta[i]=true;
+    }
+   } 
+  }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.historia2.length; i++) {   
+   if (f.historia2[i].checked) {
+    if (escorrecta[i]) {
+     nota +=1.0/respuestaRadio1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P6: "+"posicion "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestaRadio1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P6: "+"posicion "+i+" incorrecta");
+    }   
+   }
+  }
+}
+
+
+function corregirRadio2(){
+ 
+  var f=formElement;
+  var escorrecta = [];
+  for (i = 0; i < f.historia3.length; i++) {  //"historia1" es el nombre asignado a todos los checkbox
+   if (f.historia3[i].checked) {
+    escorrecta[i]=false;     
+    for (j = 0; j < respuestaRadio2.length; j++) {
+     if (i==respuestaRadio2[j]) escorrecta[i]=true;
+    }
+   } 
+  }
+  //Por cada opción que está chequedada, si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+  for (i = 0; i < f.historia3.length; i++) {   
+   if (f.historia3[i].checked) {
+    if (escorrecta[i]) {
+     nota +=1.0/respuestaRadio2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P7: "+"posicion "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestaRadio2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P7: "+"posicion "+i+" incorrecta");
+    }   
+   }
+  }
+}
+
+
 
 
 
