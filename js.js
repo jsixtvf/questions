@@ -22,7 +22,7 @@ window.onload = function(){
  formElement=document.getElementById('myform');
  formElement.onsubmit=function(){
    inicializar();
-   corregirNumber();
+   corregirText();
    corregirSelect();
    corregirCheckbox();
    corregirRadio();
@@ -207,7 +207,7 @@ function gestionarXml(dadesXml){
 //****************************************************************************************************
 //implementación de la corrección
 
-function corregirNumber(){
+function corregirText(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[0].value;     
