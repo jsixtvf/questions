@@ -187,7 +187,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nopt; i++) { 
     opcionesCheckbox1[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox1,opcionesCheckbox1);
+ ponerDatosCheckboxHtml1(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("jklm_011").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox1[i]=xmlDoc.getElementById("jklm_011").getElementsByTagName("answer")[i].innerHTML;
