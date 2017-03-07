@@ -209,7 +209,7 @@ function gestionarXml(dadesXml){
     opcionesSelect1[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
- respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[5].innerHTML);
+ respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[13].innerHTML);
 }
 
 //****************************************************************************************************
@@ -512,7 +512,7 @@ function corregirSelect1(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
   //para implementarlo con type radio, usar value para enumerar las opciones <input type='radio' value='1'>...
   //luego comparar ese value con el value guardado en answer
-  var sel1 = formElement.elements[5];  
+  var sel1 = formElement.elements[12];  
   if (sel1.selectedIndex==respuestaSelect1) {
    darRespuestaHtml("P13: Correcto");
    nota +=1;
