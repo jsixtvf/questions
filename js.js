@@ -677,7 +677,7 @@ function darRespuestaHtml(r){
 }
 
 function presentarNota(){
-   darRespuestaHtml("Nota: "+nota+" puntos sobre 3");
+   darRespuestaHtml("Nota: "+nota+" puntos sobre 13");
 }
 
 function inicializar(){
