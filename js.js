@@ -154,7 +154,7 @@ function gestionarXml(dadesXml){
  var tituloInput1=xmlDoc.getElementsByTagName("title")[7].innerHTML;
  ponerDatosInputHtml1(tituloInput1);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta1=xmlDoc.getElementsByTagName("answer")[2].innerHTML;
+ respCorrecta1=xmlDoc.getElementsByTagName("answer")[8].innerHTML;
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
