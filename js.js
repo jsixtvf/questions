@@ -171,7 +171,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nopt; i++) { 
     opcionesMultiple1[i]=xmlDoc.getElementById("jklm_010").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosMultipleHtml(tituloMultiple1,opcionesMultiple1);
+ ponerDatosMultipleHtml1(tituloMultiple1,opcionesMultiple1);
  //respuestasMultiple=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
  var nres = xmlDoc.getElementById("jklm_010").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
