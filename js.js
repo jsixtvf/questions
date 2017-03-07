@@ -154,14 +154,14 @@ function gestionarXml(dadesXml){
  var tituloInput1=xmlDoc.getElementsByTagName("title")[7].innerHTML;
  ponerDatosInputHtml1(tituloInput1);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta1=xmlDoc.getElementsByTagName("answer")[8].innerHTML;
+ respCorrecta1=xmlDoc.getElementsByTagName("answer")[7].innerHTML;
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloInput2=xmlDoc.getElementsByTagName("title")[8].innerHTML;
  ponerDatosInputHtml2(tituloInput2);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta2=xmlDoc.getElementsByTagName("answer")[3].innerHTML;
+ respCorrecta2=xmlDoc.getElementsByTagName("answer")[9].innerHTML;
 
 // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -198,7 +198,7 @@ function gestionarXml(dadesXml){
  var tituloInput3=xmlDoc.getElementsByTagName("title")[11].innerHTML;
  ponerDatosInputHtml3(tituloInput3);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta3=xmlDoc.getElementsByTagName("answer")[4].innerHTML;
+ respCorrecta3=xmlDoc.getElementsByTagName("answer")[11].innerHTML;
 
   //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
