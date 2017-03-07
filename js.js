@@ -417,7 +417,7 @@ function corregirText1(){
 function corregirText2(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[3].value;     
+  var s=formElement.elements[8].value;     
   if (s==respCorrecta2) {
    darRespuestaHtml("P9: Exacto!");
    nota +=1;
