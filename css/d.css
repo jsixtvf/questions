@@ -5,6 +5,7 @@ body{background-image: url("https://github.com/jsixtvf/questions/blob/master/img
 h3{font-size:3vw}
 input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
+input[type=radio]{width:5%;zoom:1.5}
 form{background-color:aliceblue;padding:3%}
 #imgn{
 background-image:no-repeat;
