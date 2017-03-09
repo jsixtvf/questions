@@ -9,7 +9,7 @@ input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
 input[type=radio]{width:5%;zoom:1.5}
 form{background-image: url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
-/*background-color:darkblue;*/border-style:ridge; border-width:1px; padding:3%}
+/*background-color:darkblue;*/background-repeat:no-repeat;background-size:cover;border-style:ridge; border-width:1px; padding:3%}
 input[type=submit]{position:center}
 #resultadosDiv{font-size:2.5vw;color:cornsilk;}
 #boton{position:relative;left:10%;bottom:99%;width:80%;margin-top:20%;text-align:center;}
