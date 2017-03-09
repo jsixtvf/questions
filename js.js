@@ -12,7 +12,7 @@ var respuestaRadio1 = [];
 var respuestaRadio2 = [];
 var respuestasMultiple = [];
 var respuestasMultiple1 = [];
-var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
+var nota = 0;  //nota de la prueba sobre 13 puntos (hay 13 preguntas)
 
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
@@ -311,6 +311,7 @@ function corregirMultiple(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
   var escorrecta = [];
+  var contador=0;
   x = new Boolean(false);
   for (i = 0; i < f.mul.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.mul[i].selected) {
@@ -318,6 +319,7 @@ function corregirMultiple(){
     for (j = 0; j < respuestasMultiple.length; j++) {
      if (i==respuestasMultiple[j]){
       escorrecta[i]=true;
+      contador=contador+1;
       x=true;
     }else{ 
      x=false;
@@ -340,9 +342,9 @@ function corregirMultiple(){
    }
    
   }
-    if(x){
+    if(x && contador>=2){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
-    }
+    }else{darRespuestaHtml("Tienes la respuesta incorrecta");
 }
 
 function corregirRadio1(){
