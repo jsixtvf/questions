@@ -3,7 +3,7 @@ body{width:70%;padding-left:15%;padding-right:15%}
 body,input,select,label{font-size:2vw}
 select,label,input{color:white; background-color:darkblue;}
 body{background-color: #000099; }
-h2{font-size:4vw;color:#ffcc00;text-align:center;text-shadow: -2px;}
+h2{font-size:4vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
 h3{font-size:3vw; color:coral;}
 input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
