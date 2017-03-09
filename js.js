@@ -322,6 +322,7 @@ function corregirMultiple(){
       contador=contador+1;
       x=true;
     }else{ 
+     contador=contador-1;
      x=false;
     }
    } 
@@ -447,7 +448,8 @@ function corregirMultiple1(){
       escorrecta[i]=true;
       contador=contador+1;
       x=true;
-    }else{ 
+    }else{
+      contador=contador-1;
      x=false;
     }
    } 
