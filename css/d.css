@@ -1,7 +1,7 @@
 body,html{margin:0px}
 body{width:70%;padding-left:15%;padding-right:15%}
 body,input,select,label{font-size:2vw}
-body{background-image: url("https://github.com/jsixtvf/questions/blob/master/img/CiR1ej.jpg?raw=true");}
+body{background-color: #0000e6; }
 h3{font-size:3vw; color:coral;}
 input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
@@ -10,3 +10,4 @@ form{background-color:darkblue;padding:3%}
 #imgn{
 background-image:no-repeat;
 }
+/*background-image: url("https://github.com/jsixtvf/questions/blob/master/img/CiR1ej.jpg?raw=true");*/
