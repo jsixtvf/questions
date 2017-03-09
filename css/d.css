@@ -8,24 +8,22 @@ h3{font-size:3vw; color:coral;}
 input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
 input[type=radio]{width:5%;zoom:1.5}
-form{border-style:ridge; border-width:1px;padding:3%;
-background-image:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
-background-size: 100% 100%;
-background-repeat:no-repeat;
-
-}
-
+form{border-style:ridge; border-width:1px;padding:3%;background-color:darkblue;}
 input[type=submit]{position:center}
 #resultadosDiv{font-size:2.5vw;color:cornsilk;}
 #boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
 
 
-/*background-image: url("https://github.com/jsixtvf/questions/blob/master/img/CiR1ej.jpg?raw=true");*/
-/*background-color:yellow;*/
-/*border-image-source:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
-  background-color:darkblue;*/
-/*border-image-repeat:no-repeat;
+
+
+/*background-image:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
+  background-image:url("https://github.com/jsixtvf/questions/blob/master/img/CiR1ej.jpg?raw=true");
+  background-color:yellow;
+  border-image-source:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
+  border-image-repeat:no-repeat;
   border-image-width:5%;
   border-image-slice:10%
   background-size:cover;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
 */
