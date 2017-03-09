@@ -14,7 +14,7 @@ form{
   background-repeat:no-repeat;
   /*background-size:cover;*/
   border-style:ridge; border-width:1px; padding:3%;
-  background-size: 100% 60%;
+  background-size: 100% 100%;
 }
 
 input[type=submit]{position:center}
