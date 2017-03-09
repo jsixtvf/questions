@@ -437,6 +437,7 @@ function corregirMultiple1(){
 
   var f=formElement;
   var escorrecta = [];
+  var contador=0;
   x = new Boolean(false);
   for (i = 0; i < f.mul1.length; i++) {  //"historia" es el nombre asignado a todos los checkbox
    if (f.mul1[i].selected) {
@@ -444,6 +445,7 @@ function corregirMultiple1(){
     for (j = 0; j < respuestasMultiple1.length; j++) {
      if (i==respuestasMultiple1[j]){
       escorrecta[i]=true;
+      contador=contador+1;
       x=true;
     }else{ 
      x=false;
@@ -466,9 +468,10 @@ function corregirMultiple1(){
    }
    
   }
-    if(x){
+    if(x && contador>=2){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
-    }
+    }else{darRespuestaHtml("Tienes la respuesta incorrecta");
+}
 }
 
 function corregirCheckbox1(){
