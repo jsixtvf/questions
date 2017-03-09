@@ -11,6 +11,7 @@ input[type=radio]{width:5%;zoom:1.5}
 form{border-style:ridge; border-width:1px;padding:3%;
 background-image:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");
 background-size: 50% 50%;
+background-repeat:no-repeat;
 
 }
 
