@@ -346,6 +346,7 @@ function corregirMultiple(){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }else{darRespuestaHtml("Tienes la respuesta incorrecta");
 }
+}
 
 function corregirRadio1(){
  
