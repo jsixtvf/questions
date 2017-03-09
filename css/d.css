@@ -2,7 +2,7 @@ body,html{margin:0px}
 body{width:70%;padding-left:15%;padding-right:15%}
 body,input,select,label{font-size:2vw}
 body{background-image: url("https://github.com/jsixtvf/questions/blob/master/img/CiR1ej.jpg?raw=true");}
-h3{font-size:3vw}
+h3{font-size:3vw color:#b3ffff;}
 input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
 input[type=radio]{width:5%;zoom:1.5}
