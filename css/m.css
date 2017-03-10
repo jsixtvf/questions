@@ -9,17 +9,17 @@ form{background-color:aliceblue;padding:1%}*/
 
 body,html{margin:0px}
 body{width:75%;padding-left:15%;padding-right:15%}
-body,input,select,label{font-size:4vw}
+body,input,select,label{font-size:5vw}
 select,label,input{color:white; background-color:darkblue;}
 body{background-color: #000099; }
-h2{font-size:6vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
-h3{font-size:5vw; color:coral;}
-input,select{width:65%}
-input[type=checkbox]{width:8%;zoom:1.5}
-input[type=radio]{width:8%;zoom:1.5}
+h2{font-size:7vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
+h3{font-size:6vw; color:coral;}
+input,select{width:70%}
+input[type=checkbox]{width:9%;zoom:1.5}
+input[type=radio]{width:9%;zoom:1.5}
 form{padding:4%}
 #myform{background-color:darkblue;border-style:ridge;border-width:4px;}
 input[type=submit]{position:center}
-#resultadosDiv{position:relative;font-size:4vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
+#resultadosDiv{position:relative;font-size:5vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
 #boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
 
