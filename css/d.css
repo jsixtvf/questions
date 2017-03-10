@@ -9,7 +9,7 @@ input,select{width:50%}
 input[type=checkbox]{width:5%;zoom:1.5}
 input[type=radio]{width:5%;zoom:1.5}
 form{padding:3%}
-#brdrimg{
+#brdimg{
   border-image: url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true")
     10% 5% outset;
   /*border-image-repeat: stretch;
