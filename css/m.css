@@ -14,8 +14,7 @@ select,label,input{color:white; background-color:darkblue;}
 body{background-color: #000099; }
 h2{font-size:7vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
 h3{font-size:6vw; color:coral;}
-input{width:75%};
-select{width:85%};
+input,select{width:80%};
 input[type=checkbox]{width:9%;}
 input[type=radio]{width:9%;}
 form{padding:4%}
