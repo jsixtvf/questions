@@ -1,15 +1,73 @@
-body,html{margin:0px}
-body{width:70%;padding-left:15%;padding-right:15%}
-body,input,select,label{font-size:2vw}
-select,label,input{color:white; background-color:darkblue;}
-body{background-color: #000099; }
-h2{font-size:4vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
-h3{font-size:3vw; color:coral;}
-input,select{width:50%}
-input[type=checkbox]{width:5%;zoom:1.5}
-input[type=radio]{width:5%;zoom:1.5}
-form{padding:3%}
-#myform{background-color:darkblue;border-style:ridge;border-width:2px;}
-input[type=submit]{position:center}
-#resultadosDiv{position:relative;font-size:2.5vw;color:cornsilk;margin-top:15%;letter-spacing:5%}
-#boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
+body,
+html {
+    margin: 0px
+}
+body {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%
+}
+body,
+input,
+select,
+label {
+    font-size: 2vw
+}
+select,
+label,
+input {
+    color: white;
+    background-color: darkblue;
+}
+body {
+    background-color: #000099;
+}
+h2 {
+    font-size: 4vw;
+    color: #ffcc00;
+    text-align: center;
+    text-shadow: -5px;
+}
+h3 {
+    font-size: 3vw;
+    color: coral;
+}
+input,
+select {
+    width: 50%
+}
+input[type=checkbox] {
+    width: 5%;
+    zoom: 1.5
+}
+input[type=radio] {
+    width: 5%;
+    zoom: 1.5
+}
+form {
+    padding: 3%
+}
+#myform {
+    background-color: darkblue;
+    border-style: ridge;
+    border-width: 2px;
+}
+input[type=submit] {
+    position: center
+}
+#resultadosDiv {
+    position: relative;
+    font-size: 2.5vw;
+    color: cornsilk;
+    margin-top: 15%;
+    letter-spacing: 5%
+}
+#boton {
+    position: relative;
+    left: 10%;
+    bottom: 96%;
+    width: 80%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    text-align: center;
+}
