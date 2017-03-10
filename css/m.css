@@ -8,11 +8,11 @@ form{background-color:aliceblue;padding:1%}*/
 
 
 body,html{margin:0px}
-body{width:75%;padding-left:15%;padding-right:15%}
+body{width:75%;padding-left:15%;padding-right:15%;background-color:darkblue;}
 body,input,select,label{font-size:5vw}
 select,label,input{color:white; background-color:darkblue;}
 option{font-size:5vw};
-body{background-color: #000099; }
+body{background-color: #000099;}
 h2{font-size:7vw;color:#ffcc00;text-align:center;}
 h3{font-size:6vw; color:coral;}
 input{width:70%};
