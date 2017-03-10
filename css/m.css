@@ -15,8 +15,8 @@ body{background-color: #000099; }
 h2{font-size:7vw;color:#ffcc00;text-align:center;text-shadow: -5px;}
 h3{font-size:6vw; color:coral;}
 input,select{width:75%}
-input[type=checkbox]{width:9%;zoom:1.5}
-input[type=radio]{width:9%;zoom:1.5}
+input[type=checkbox]{width:9%;zoom:1}
+input[type=radio]{width:9%;zoom:1}
 form{padding:4%}
 #myform{left:30%;background-color:darkblue;border-style:ridge;border-width:4px;}
 input[type=submit]{position:center}
