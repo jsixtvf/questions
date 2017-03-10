@@ -317,13 +317,13 @@ function corregirMultiple(){
    if (f.mul[i].selected) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasMultiple.length; j++) {
-     if (i==respuestasMultiple[j]){
+     if (f.mul[i].selected==respuestasMultiple[j]){
       escorrecta[i]=true;
       contador=contador+1;
       x=true;
     }else{ 
-     contador=contador-1;
-     x=false;
+      contador=contador-1;
+      x=false;
     }
    } 
   }
@@ -345,8 +345,8 @@ function corregirMultiple(){
   }
     if(x && contador>=2){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
-    }else{darRespuestaHtml("Tienes la respuesta incorrecta");
-}
+    }else{darRespuestaHtml("Tiene la respuesta incorrecta");
+         }
 }
 
 function corregirRadio1(){
