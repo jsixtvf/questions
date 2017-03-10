@@ -22,6 +22,6 @@ input[type=radio]{width:5%}
 form{padding:4%}
 #myform{left:30%;background-color:darkblue;border-style:ridge;border-width:4px;}
 input[type=submit]{position:center}
-#resultadosDiv{left:35%;position:relative;font-size:8vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
+#resultadosDiv{left:35%;position:relative;font-size:4vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
 #boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
 
