@@ -317,7 +317,7 @@ function corregirMultiple(){
    if (f.mul[i].selected) {
     escorrecta[i]=false;     
     for (j = 0; j < respuestasMultiple.length; j++) {
-     if (f.mul[i].selected==respuestasMultiple[j]){
+     if (i==respuestasMultiple[j]){
       escorrecta[i]=true;
       contador=contador+1;
       x=true;
@@ -343,7 +343,8 @@ function corregirMultiple(){
    }
    
   }
-    if(x && contador>=2){
+    /*if(x && contador>=2){*/
+     if(contador>1){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }else{darRespuestaHtml("Tiene la respuesta incorrecta");
          }
