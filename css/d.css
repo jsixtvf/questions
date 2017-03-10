@@ -15,7 +15,7 @@ form{padding:3%}
   /*border-image-repeat: stretch;
   border-image-slice:10%;
   border-image-source:url("https://github.com/jsixtvf/questions/blob/master/img/4e13c-vintage13.png?raw=true");*/
-  background-color:darkblue;border-style:ridge;border-width:2px;
+  /*background-color:darkblue;border-style:ridge;border-width:2px;*/
 }
 input[type=submit]{position:center}
 #resultadosDiv{position:relative;font-size:2.5vw;color:cornsilk;margin-top:15%;letter-spacing:5%}
