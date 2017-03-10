@@ -11,14 +11,14 @@ body,html{margin:0px}
 body{width:75%;padding-left:15%;padding-right:15%;background-color:darkblue;}
 body,input,select,label{font-size:5vw}
 select,label,input{color:white; background-color:darkblue;}
-option{font-size:5vw};
+option{font-size:5vw}
 body{background-color: #000099;}
 h2{font-size:7vw;color:#ffcc00;text-align:center;}
 h3{font-size:6vw; color:coral;}
-input{width:70%};
-select{width:85%};
-input[type=checkbox]{width:5%;}
-input[type=radio]{width:5%;}
+input{width:70%}
+select{width:85%}
+input[type=checkbox]{width:5%}
+input[type=radio]{width:5%}
 form{padding:4%}
 #myform{left:30%;background-color:darkblue;border-style:ridge;border-width:4px;}
 input[type=submit]{position:center}
