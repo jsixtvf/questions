@@ -1,13 +1,13 @@
-body,html{margin:0px}
+/*body,html{margin:0px}
 body{width:96%;padding-left:2%;padding-right:2%}
 body,input,select,label{font-size:5vw}
 h3{font-size:7vw}
 input,select{width:80%}
 input[type=checkbox]{width:5%;zoom:1.5}
-form{background-color:aliceblue;padding:1%}
+form{background-color:aliceblue;padding:1%}*/
 
 
-/*body,html{margin:0px}
+body,html{margin:0px}
 body{width:70%;padding-left:15%;padding-right:15%}
 body,input,select,label{font-size:2vw}
 select,label,input{color:white; background-color:darkblue;}
@@ -22,4 +22,4 @@ form{padding:3%}
 input[type=submit]{position:center}
 #resultadosDiv{position:relative;font-size:2.5vw;color:cornsilk;margin-top:15%;letter-spacing:5%}
 #boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
-*/
+
