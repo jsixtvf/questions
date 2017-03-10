@@ -343,11 +343,12 @@ function corregirMultiple(){
    }
    
   }
-    /*if(x && contador>=2){*/
-     if(contador>1){
+    if(x){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
-    }else{darRespuestaHtml("Tiene la respuesta incorrecta");
-         }
+    }else{
+     darRespuestaHtml("Tiene la respuesta incorrecta");
+     }
+ 
 }
 
 function corregirRadio1(){
@@ -471,7 +472,7 @@ function corregirMultiple1(){
    }
    
   }
-    if(x && contador>=2){
+    if(x){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }else{darRespuestaHtml("Tienes la respuesta incorrecta");
 }
