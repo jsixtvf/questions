@@ -343,7 +343,7 @@ function corregirMultiple(){
    }
    
   }
-    if(x){
+    if(x && contador>=2){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }else{
      darRespuestaHtml("Tiene la respuesta incorrecta");
@@ -472,7 +472,7 @@ function corregirMultiple1(){
    }
    
   }
-    if(x){
+    if(x && contador>=2){
      darRespuestaHtml("Tiene todas las opciones correctas seleccionadas. Respuesta correcta");
     }else{darRespuestaHtml("Tienes la respuesta incorrecta");
 }
