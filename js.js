@@ -209,7 +209,7 @@ function gestionarXml(dadesXml){
     opcionesSelect1[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
- respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[6].innerHTML);
+ respuestaSelect1=parseInt(xmlDoc.getElementsById("mul1").innerHTML);
 }
 
 //****************************************************************************************************
@@ -407,8 +407,8 @@ function corregirRadio2(){
 function corregirText1(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[7].value;     
-  if (s==respCorrecta1) {
+  var s1=formElement.elements[7].value;     
+  if (s1==respCorrecta1) {
    darRespuestaHtml("P8: Exacto!");
    nota +=1;
   }
@@ -423,8 +423,8 @@ function corregirText1(){
 function corregirText2(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[8].value;     
-  if (s==respCorrecta2) {
+  var s2=formElement.elements[8].value;     
+  if (s2==respCorrecta2) {
    darRespuestaHtml("P9: Exacto!");
    nota +=1;
   }
@@ -506,8 +506,8 @@ function corregirCheckbox1(){
 
 function corregirText3(){
   
-  var s=formElement.elements[4].value;     
-  if (s==respCorrecta3) {
+  var s3=formElement.elements[4].value;     
+  if (s3==respCorrecta3) {
    darRespuestaHtml("P12: Exacto!");
    nota +=1;
   }
