@@ -209,7 +209,7 @@ function gestionarXml(dadesXml){
     opcionesSelect1[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
- respuestaSelect1=parseInt(xmlDoc.getElementsById("mul1").innerHTML);
+ respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
 }
 
 //****************************************************************************************************
