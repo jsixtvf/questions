@@ -22,7 +22,7 @@ input[type=radio]{width:5%}
 form{padding:4%}
 #myform{left:25%;background-color:darkblue;border-style:ridge;border-width:4px;}
 input[type=submit]{position:center}
-#resultadosDiv{left:10%;position:relative;font-size:3vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
+#resultadosDiv{left:10%;position:relative;font-size:3.5vw;color:cornsilk;margin-top:20%;letter-spacing:7%}
 #boton{position:relative;left:10%;bottom:96%;width:80%;margin-top:20%;margin-bottom:5%;text-align:center;}
 #mul1{font-size:4vw}
 
