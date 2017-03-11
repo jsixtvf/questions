@@ -154,14 +154,14 @@ function gestionarXml(dadesXml){
  var tituloInput1=xmlDoc.getElementsByTagName("title")[7].innerHTML;
  ponerDatosInputHtml1(tituloInput1);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta1=xmlDoc.getElementsByTagName("answer")[3].innerHTML;
+ respCorrecta1=xmlDoc.getElementsByTagName("answer")[8].innerHTML;
 
  //TEXT
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloInput2=xmlDoc.getElementsByTagName("title")[8].innerHTML;
  ponerDatosInputHtml2(tituloInput2);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta2=xmlDoc.getElementsByTagName("answer")[4].innerHTML;
+ respCorrecta2=xmlDoc.getElementsByTagName("answer")[9].innerHTML;
 
 // MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -198,7 +198,7 @@ function gestionarXml(dadesXml){
  var tituloInput3=xmlDoc.getElementsByTagName("title")[11].innerHTML;
  ponerDatosInputHtml3(tituloInput3);
  //respCorrecta=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- respCorrecta3=xmlDoc.getElementsByTagName("answer")[5].innerHTML;
+ respCorrecta3=xmlDoc.getElementsByTagName("answer")[13].innerHTML;
 
   //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
@@ -407,7 +407,7 @@ function corregirRadio2(){
 function corregirText1(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s1=formElement.elements[7].value;     
+  var s1=formElement.elements[17].value;     
   if (s1==respCorrecta1) {
    darRespuestaHtml("P8: Exacto!");
    nota +=1;
@@ -423,7 +423,7 @@ function corregirText1(){
 function corregirText2(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s2=formElement.elements[8].value;     
+  var s2=formElement.elements[18].value;     
   if (s2==respCorrecta2) {
    darRespuestaHtml("P9: Exacto!");
    nota +=1;
@@ -506,7 +506,7 @@ function corregirCheckbox1(){
 
 function corregirText3(){
   
-  var s3=formElement.elements[4].value;     
+  var s3=formElement.elements[23].value;     
   if (s3==respCorrecta3) {
    darRespuestaHtml("P12: Exacto!");
    nota +=1;
