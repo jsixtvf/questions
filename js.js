@@ -209,7 +209,7 @@ function gestionarXml(dadesXml){
     opcionesSelect1[i] = xmlDoc.getElementById("jklm_013").getElementsByTagName('option')[i].innerHTML;
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
- respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+ respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[24].innerHTML);
 }
 
 //****************************************************************************************************
@@ -667,12 +667,12 @@ function ponerDatosInputHtml3(t){
 
 function ponerDatosSelectHtml1(t,opt){
   document.getElementById("tituloSelect1").innerHTML=t;
-  var select = document.getElementsByTagName("select")[3];
+  var select2 = document.getElementsByTagName("select")[3];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
     option.value=i+1;
-    select.options.add(option);
+    select2.options.add(option);
  }  
 }
 
