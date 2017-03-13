@@ -46,7 +46,7 @@ window.onload = function(){
    gestionarXml(this);
   }
  };
- xhttp.open("GET", "questions.xml", true);
+ xhttp.open("GET", "xml/questions.xml", true);
  xhttp.send();
 }
 
